@@ -9,3 +9,8 @@ body {
   font-family: "Spartan", sans-serif;
   background-color: hsl(180, 31%, 95%);
 }
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
