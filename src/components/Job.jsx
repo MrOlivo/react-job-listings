@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../images/manage.svg";
+import Details from "./Details";
+import KeywordsContainer from "./KeywordsContainer";
 import {
   JobContainer,
   Logo,
@@ -9,14 +11,9 @@ import {
   Featured,
   Position,
   Information,
-  Details,
-  KeywordsContainer,
-  Keyword,
 } from "./JobStyles";
 
 export default function Job({ data, setKeyword }) {
-  // const [icon, setIcon] = useState("");
-
   const keywords = [data.role, data.level, ...data.languages, ...data.tools];
 
   return (
@@ -31,23 +28,16 @@ export default function Job({ data, setKeyword }) {
           {data.featured && <Featured>featured</Featured>}
         </Company>
         <Position>{data.position}</Position>
-        <Details>
-          <span>{data.postedAt}</span>
-          <span>&nbsp;&bull;&nbsp;</span>
-          <span>{data.contract}</span>
-          <span>&nbsp;&bull;&nbsp;</span>
-          <span>{data.location}</span>
-        </Details>
+        <Details
+          postedAt={data.postedAt}
+          contract={data.contract}
+          location={data.location}
+        />
       </Information>
-      <KeywordsContainer>
-        {keywords.map((word, id) => {
-          return (
-            <Keyword key={id} onClick={() => setKeyword(word)}>
-              {word}
-            </Keyword>
-          );
-        })}
-      </KeywordsContainer>
+      <KeywordsContainer
+        setKeyword={setKeyword}
+        keywords={keywords}
+      ></KeywordsContainer>
     </JobContainer>
   );
 }
