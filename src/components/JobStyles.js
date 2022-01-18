@@ -1,27 +1,6 @@
 import styled from "styled-components";
 
-import { COLOR_SCHEME, BOX_SHADOW } from "../colors";
-
-export const JobContainer = styled.div`
-  width: 70vw;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  border-radius: 5px;
-  border-left: ${(props) => props.size}px solid rgb(90, 164, 164);
-  margin: 1.3rem 0;
-  position: relative;
-  box-shadow: ${BOX_SHADOW.PRIMARY_COLOR};
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 75vw;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-`;
+import { COLOR_SCHEME } from "../colors";
 
 export const Logo = styled.img.attrs((props) => ({
   src: props.imagePath,
