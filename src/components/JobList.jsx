@@ -33,7 +33,7 @@ export default function JobList({ data, setKeyword, keywords }) {
   }, [keywords, data]);
 
   return (
-    <List role="main">
+    <List>
       {filteredJobs.map((job) => (
         <Job key={job.id} job={job} setKeyword={setKeyword}></Job>
       ))}
