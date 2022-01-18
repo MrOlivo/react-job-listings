@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header />
       {filterKeywords.length > 0 && (
         <Filters
           keywords={filterKeywords}
