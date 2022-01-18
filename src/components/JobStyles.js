@@ -33,10 +33,8 @@ export const Logo = styled.img.attrs((props) => ({
   @media (max-width: 768px) {
     position: absolute;
     top: -2rem;
-    & > img {
-      width: 4rem;
-      height: auto;
-    }
+    width: 4rem;
+    height: auto;
   }
 `;
 
