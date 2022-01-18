@@ -15,11 +15,9 @@ import {
 export default function Job({ job, setKeyword }) {
   const keywords = [job.role, job.level, ...job.languages, ...job.tools];
 
-  const image = `${process.env.PUBLIC_URL} ${job.logo}`;
-
   return (
     <JobContainer featured={job.featured} size={job.featured ? "5" : "0"}>
-      <Logo imagePath={image} alt={job.company} />
+      <Logo imagePath={job.logo} alt={job.company} />
       <Information>
         <Company>
           <Name>{job.company}</Name>
