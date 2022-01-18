@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { COLOR_SCHEME } from "../colors";
 
-const DesktopImg = `${process.env.PUBLIC_URL}/images/bg-header-desktop.svg`;
-const MobileImg = `${process.env.PUBLIC_URL}/images/bg-header-mobile.svg`;
+const DesktopImg = "images/bg-header-desktop.svg";
+const MobileImg = "images/bg-header-mobile.svg";
 
 const HeaderEl = styled.header`
   width: 100%;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BOX_SHADOW, COLOR_SCHEME } from "../colors";
 
 export default function Filters({ keywords, removeKeyword, removeAll }) {
-  const removeIcon = `${process.env.PUBLIC_URL}../images/icon-remove.svg`;
+  const removeIcon = "images/icon-remove.svg";
 
   return (
     <HeaderContainer>
