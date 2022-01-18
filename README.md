@@ -1,5 +1,7 @@
 # Frontend Mentor - Job listings with filtering solution
 
+[![Node.js CI/CD](https://github.com/MrOlivo/react-job-listings/actions/workflows/node.js.yml/badge.svg)](https://github.com/MrOlivo/react-job-listings/actions/workflows/node.js.yml)
+
 This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
