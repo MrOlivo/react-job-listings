@@ -23,7 +23,10 @@ export const JobContainer = styled.div`
   }
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img.attrs((props) => ({
+  src: props.imagePath,
+  alt: props.alt,
+}))`
   display: flex;
   align-items: center;
   padding-right: 1.5rem;

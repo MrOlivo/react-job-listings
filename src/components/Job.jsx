@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../images/manage.svg";
 import Details from "./Details";
 import KeywordsContainer from "./KeywordsContainer";
 import {
@@ -13,25 +12,25 @@ import {
   Information,
 } from "./JobStyles";
 
-export default function Job({ data, setKeyword }) {
-  const keywords = [data.role, data.level, ...data.languages, ...data.tools];
+export default function Job({ job, setKeyword }) {
+  const keywords = [job.role, job.level, ...job.languages, ...job.tools];
+
+  const image = `${process.env.PUBLIC_URL} ${job.logo}`;
 
   return (
-    <JobContainer featured={data.featured} size={data.featured ? "5" : "0"}>
-      <Logo>
-        <img src={logo} alt={data.company + " logo"}></img>
-      </Logo>
+    <JobContainer featured={job.featured} size={job.featured ? "5" : "0"}>
+      <Logo imagePath={image} alt={job.company} />
       <Information>
         <Company>
-          <Name>{data.company}</Name>
-          {data.new && <Badge>new!</Badge>}
-          {data.featured && <Featured>featured</Featured>}
+          <Name>{job.company}</Name>
+          {job.new && <Badge>new!</Badge>}
+          {job.featured && <Featured>featured</Featured>}
         </Company>
-        <Position>{data.position}</Position>
+        <Position>{job.position}</Position>
         <Details
-          postedAt={data.postedAt}
-          contract={data.contract}
-          location={data.location}
+          postedAt={job.postedAt}
+          contract={job.contract}
+          location={job.location}
         />
       </Information>
       <KeywordsContainer

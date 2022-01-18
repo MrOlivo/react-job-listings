@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { BOX_SHADOW, COLOR_SCHEME } from "../colors";
-import removeIcon from "../images/icon-remove.svg";
 
 export default function Filters({ keywords, removeKeyword, removeAll }) {
+  const removeIcon = `${process.env.PUBLIC_URL}../images/icon-remove.svg`;
+
   return (
     <HeaderContainer>
       <Container>

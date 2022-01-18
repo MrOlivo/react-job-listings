@@ -35,7 +35,7 @@ export default function JobList({ data, setKeyword, keywords }) {
   return (
     <List>
       {filteredJobs.map((job) => (
-        <Job key={job.id} data={job} setKeyword={setKeyword}></Job>
+        <Job key={job.id} job={job} setKeyword={setKeyword}></Job>
       ))}
     </List>
   );
