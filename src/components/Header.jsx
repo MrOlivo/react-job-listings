@@ -17,5 +17,5 @@ const HeaderEl = styled.header`
 `;
 
 export default function Header() {
-  return <HeaderEl role="banner" />;
+  return <HeaderEl />;
 }
