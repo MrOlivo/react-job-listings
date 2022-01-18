@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Job from "./Job";
 
-const List = styled.div`
+const List = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@ export default function JobList({ data, setKeyword, keywords }) {
   }, [keywords, data]);
 
   return (
-    <List>
+    <List role="main">
       {filteredJobs.map((job) => (
         <Job key={job.id} job={job} setKeyword={setKeyword}></Job>
       ))}
