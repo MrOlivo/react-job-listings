@@ -32,7 +32,6 @@ const Container = styled.div`
 const Keyword = styled.span`
   background-color: ${COLOR_SCHEME.SECONDARY};
   color: ${COLOR_SCHEME.PRIMARY};
-  font-weight: 700;
   padding: 0.5rem;
   margin: 0.1rem;
   border-radius: 5px;
