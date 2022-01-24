@@ -40,8 +40,9 @@ export const Name = styled.span`
 export const Badge = styled.span`
   color: ${COLOR_SCHEME.SECONDARY};
   background-color: ${COLOR_SCHEME.PRIMARY};
-  border-radius: 1rem;
-  padding: 0.4rem;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 0.4rem 0.5em 0.4em;
   text-transform: uppercase;
   margin-right: 0.8rem;
 `;
