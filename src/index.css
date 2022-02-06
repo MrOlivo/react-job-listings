@@ -14,3 +14,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.attribution > a {
+  margin: 0 5px;
+}
